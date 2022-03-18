@@ -75,9 +75,9 @@ public class SwiftTwilioVoicePlugin: NSObject, FlutterPlugin,  FlutterStreamHand
         guard let controller = appDelegate?.window??.rootViewController as? FlutterViewController else {
             fatalError("rootViewController is not type FlutterViewController")
         }
-        let registrar = controller.registrar(forPlugin: "twilio_voice")
+        let registrar = controller.registrar(forPlugin: "twilio_voice_mimp")
         if let unwrappedRegistrar = registrar {
-            let eventChannel = FlutterEventChannel(name: "twilio_voice/events", binaryMessenger: unwrappedRegistrar.messenger())
+            let eventChannel = FlutterEventChannel(name: "twilio_voice_mimp/events", binaryMessenger: unwrappedRegistrar.messenger())
             eventChannel.setStreamHandler(self)
         }
     }
@@ -92,8 +92,8 @@ public class SwiftTwilioVoicePlugin: NSObject, FlutterPlugin,  FlutterStreamHand
     public static func register(with registrar: FlutterPluginRegistrar) {
         
         let instance = SwiftTwilioVoicePlugin()
-        let methodChannel = FlutterMethodChannel(name: "twilio_voice/messages", binaryMessenger: registrar.messenger())
-        let eventChannel = FlutterEventChannel(name: "twilio_voice/events", binaryMessenger: registrar.messenger())
+        let methodChannel = FlutterMethodChannel(name: "twilio_voice_mimp/messages", binaryMessenger: registrar.messenger())
+        let eventChannel = FlutterEventChannel(name: "twilio_voice_mimp/events", binaryMessenger: registrar.messenger())
         eventChannel.setStreamHandler(instance)
         registrar.addMethodCallDelegate(instance, channel: methodChannel)
         registrar.addApplicationDelegate(instance)
