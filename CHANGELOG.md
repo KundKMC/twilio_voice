@@ -1,5 +1,14 @@
-## Next release
-* Feat: [Android] Turn off the screen when a call is active and the head is against the handset. @solid-software (https://solid.software)
+## 0.0.13
+* Android CallsScreen now displays ClientID / CallerID
+
+## 0.0.12
+* iOS XCODE failed
+
+## 0.0.11
+* iOS Podspecs were failing
+
+## 0.0.10
+* German Localization in Android
 
 ## 0.0.9
 * Feat: forwarded callInvite custom parameters to flutter
