@@ -1,3 +1,9 @@
+## 0.0.15
+* Splash Icon missing
+
+## 0.0.14
+* Compiler anhancements
+
 ## 0.0.13
 * Android CallsScreen now displays ClientID / CallerID
 
