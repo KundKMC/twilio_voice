@@ -1,3 +1,6 @@
+## 0.0.16
+* Unknown Caller ist auch in der App sichtbar
+
 ## 0.0.15
 * Splash Icon missing
 
